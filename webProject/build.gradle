@@ -18,5 +18,5 @@ compileJava.dependsOn unzip
 
 dependencies {
 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
-	compile 'com.virtusa.app:extApp:1.0-SNAPSHOT'
+	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
 }

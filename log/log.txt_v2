@@ -1,3 +1,15 @@
+commit cf7fa6665d46e04fda79efdb82e9f8f5a0d98141
+Author: bholes <bholes@virtusa.com>
+Date:   Fri Feb 5 14:55:17 2016 +0530
+
+    log file version changed
+
+commit 2d2cbdb3d3fed0118d94c8f4b73b262f23abb3e7
+Author: bholes <bholes@virtusa.com>
+Date:   Fri Feb 5 14:40:35 2016 +0530
+
+    second log commit
+
 commit 2e93763fd58a64e3d96fed7e2f58447b43e85ad0
 Merge: 74c84f6 c70e3b8
 Author: mayan <mayan@virtusa.com>
