@@ -1,7 +1,7 @@
 From eba1534eb3fb2d090657b4be9b0d5878dc3ede99 Mon Sep 17 00:00:00 2001
 From: bholes <bholes@virtusa.com>
 Date: Fri, 5 Feb 2016 18:17:29 +0530
-Subject: [PATCH 2/2] finally worked
+Subject: [PATCH 2/3] finally worked
 
 ---
  webProject/build.gradle | 1 -

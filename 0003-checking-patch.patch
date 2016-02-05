@@ -1,0 +1,139 @@
+From 382dba19961a413a2b01f05dffd636240dba7b89 Mon Sep 17 00:00:00 2001
+From: bholes <bholes@virtusa.com>
+Date: Fri, 5 Feb 2016 20:06:04 +0530
+Subject: [PATCH 3/3] checking patch
+
+---
+ 0001-deleted-logger.patch | 79 +++++++++++++++++++++++++++++++++++++++++++++++
+ 0002-finally-worked.patch | 22 +++++++++++++
+ webProject/build.gradle   |  1 +
+ 3 files changed, 102 insertions(+)
+ create mode 100644 0001-deleted-logger.patch
+ create mode 100644 0002-finally-worked.patch
+
+diff --git a/0001-deleted-logger.patch b/0001-deleted-logger.patch
+new file mode 100644
+index 0000000..1ecc6c2
+--- /dev/null
++++ b/0001-deleted-logger.patch
+@@ -0,0 +1,79 @@
++From cc09ccb34c83e83d720760f584a2727666515986 Mon Sep 17 00:00:00 2001
++From: bholes <bholes@virtusa.com>
++Date: Fri, 5 Feb 2016 18:00:46 +0530
++Subject: [PATCH 1/2] deleted logger
++
++---
++ logger/New Text Document.txt |  0
++ logger/log.txt_v2            | 55 --------------------------------------------
++ 2 files changed, 55 deletions(-)
++ delete mode 100644 logger/New Text Document.txt
++ delete mode 100644 logger/log.txt_v2
++
++diff --git a/logger/New Text Document.txt b/logger/New Text Document.txt
++deleted file mode 100644
++index e69de29..0000000
++diff --git a/logger/log.txt_v2 b/logger/log.txt_v2
++deleted file mode 100644
++index 444947b..0000000
++--- a/logger/log.txt_v2
+++++ /dev/null
++@@ -1,55 +0,0 @@
++-commit cf7fa6665d46e04fda79efdb82e9f8f5a0d98141
++-Author: bholes <bholes@virtusa.com>
++-Date:   Fri Feb 5 14:55:17 2016 +0530
++-
++-    log file version changed
++-
++-commit 2d2cbdb3d3fed0118d94c8f4b73b262f23abb3e7
++-Author: bholes <bholes@virtusa.com>
++-Date:   Fri Feb 5 14:40:35 2016 +0530
++-
++-    second log commit
++-
++-commit 2e93763fd58a64e3d96fed7e2f58447b43e85ad0
++-Merge: 74c84f6 c70e3b8
++-Author: mayan <mayan@virtusa.com>
++-Date:   Fri Feb 5 13:53:14 2016 +0530
++-
++-    Merge branch 'master' of https://github.com/bholes/new-repository
++-
++-commit 74c84f6bf203af314ce69029731ca059fe6a799e
++-Author: mayan <mayan@virtusa.com>
++-Date:   Fri Feb 5 13:52:11 2016 +0530
++-
++-    bhole bhoel! i added something and if u can see,it works
++-
++-commit c70e3b8f0a37a60f0274f0d48943a2f6ba68f7d3
++-Author: bholes <bholes@virtusa.com>
++-Date:   Thu Feb 4 19:48:39 2016 +0530
++-
++-    first log file
++-
++-commit 168505fd3aa0949dfb6ec4158fa79d79fae104be
++-Merge: cd6e4a6 deb59f0
++-Author: mayan <mayan@virtusa.com>
++-Date:   Fri Feb 5 13:47:31 2016 +0530
++-
++-    Merge branch 'master' of https://github.com/bholes/new-repository
++-
++-commit cd6e4a6c9cda9a779ce7f3390065b580f141133e
++-Author: mayan <mayan@virtusa.com>
++-Date:   Thu Feb 4 20:24:58 2016 +0530
++-
++-    my first commit
++-
++-commit deb59f088eed39a6473c7ff9c7395ccb8f053e5d
++-Author: bholes <bholes@virtusa.com>
++-Date:   Thu Feb 4 19:48:39 2016 +0530
++-
++-    changed file commit
++-
++-commit 58b4728294c5cb78fdb52e0ae59b4c37964ce268
++-Author: bholes <bholes@virtusa.com>
++-Date:   Thu Feb 4 19:48:39 2016 +0530
++-
++-    first commit
++-- 
++1.9.5.msysgit.0
++
+diff --git a/0002-finally-worked.patch b/0002-finally-worked.patch
+new file mode 100644
+index 0000000..4a2b64b
+--- /dev/null
++++ b/0002-finally-worked.patch
+@@ -0,0 +1,22 @@
++From eba1534eb3fb2d090657b4be9b0d5878dc3ede99 Mon Sep 17 00:00:00 2001
++From: bholes <bholes@virtusa.com>
++Date: Fri, 5 Feb 2016 18:17:29 +0530
++Subject: [PATCH 2/2] finally worked
++
++---
++ webProject/build.gradle | 1 -
++ 1 file changed, 1 deletion(-)
++
++diff --git a/webProject/build.gradle b/webProject/build.gradle
++index f94b932..6386fad 100644
++--- a/webProject/build.gradle
+++++ b/webProject/build.gradle
++@@ -18,5 +18,4 @@ compileJava.dependsOn unzip
++ 
++ dependencies {
++ 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
++-	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
++ }
++-- 
++1.9.5.msysgit.0
++
+diff --git a/webProject/build.gradle b/webProject/build.gradle
+index 6386fad..f94b932 100644
+--- a/webProject/build.gradle
++++ b/webProject/build.gradle
+@@ -18,4 +18,5 @@ compileJava.dependsOn unzip
+ 
+ dependencies {
+ 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
++	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
+ }
+-- 
+1.9.5.msysgit.0
+
