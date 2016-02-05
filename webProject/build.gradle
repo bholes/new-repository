@@ -1,0 +1,20 @@
+apply plugin:'java'
+apply plugin:'maven'
+apply plugin:'war'
+def outputDir = "${buildDir}/classes/main"
+
+repositories {
+	mavenLocal()
+}
+
+task unzip(type: Copy) {
+	from {configurations.compile.collect{zipTree(it)}}
+	into outputDir
+}
+
+compileJava.dependsOn unzip
+
+dependencies {
+	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
+	compile 'com.virtusa.app:extApp:1.0-SNAPSHOT'
+}
