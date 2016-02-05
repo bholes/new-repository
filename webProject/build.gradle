@@ -6,6 +6,7 @@ def outputDir = "${buildDir}/classes/main"
 
 repositories {
 	mavenLocal()
+	mavencentral()
 }
 
 task unzip(type: Copy) {
