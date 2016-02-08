@@ -6,7 +6,6 @@ def outputDir = "${buildDir}/classes/main"
 
 repositories {
 	mavenLocal()
-	mavencentral()
 }
 
 
@@ -20,5 +19,4 @@ compileJava.dependsOn unzipfiles
 
 dependencies {
 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
-	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
 }
