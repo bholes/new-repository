@@ -9,13 +9,16 @@ repositories {
 	mavencentral()
 }
 
-task unzip(type: Copy) {
+
+task unzipfiles(type: Copy) {
 	from {configurations.compile.collect{zipTree(it)}}
 	into outputDir
 }
 
-compileJava.dependsOn unzip
+
+compileJava.dependsOn unzipfiles
 
 dependencies {
 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
+	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
 }
