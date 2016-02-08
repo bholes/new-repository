@@ -6,7 +6,6 @@ def outputDir = "${buildDir}/classes/main"
 
 repositories {
 	mavenLocal()
-	mavencentral()
 }
 
 
