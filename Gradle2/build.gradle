@@ -1,0 +1,20 @@
+apply plugin:'java'
+//apply plugin:'application'
+apply plugin:'war'
+
+repositories {
+mavenLocal()
+mavenCentral()
+}
+def outputdir= "${buildDir}/classes/main/"
+
+dependencies {
+compile 'com.virtusa.extra:extraFile:1.0-SNAPSHOT'
+}
+task unzip(type:Copy){
+	from {configurations.compile.collect{zipTree(it)}}
+	into outputdir
+	
+}
+compileJava.dependsOn unzip
+//configurations.runtime.each{File f -> println f}
