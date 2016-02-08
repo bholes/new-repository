@@ -12,6 +12,5 @@
 %>
 Message is <%=extApp.extMethod() %>
 and <%=app.appMethod() %>
-${New_Var}
 </body>
 </html>
