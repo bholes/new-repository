@@ -1,0 +1,22 @@
+From 28c4fda561dfd0ea5e257edf16278e12aa0da8b4 Mon Sep 17 00:00:00 2001
+From: bholes <bholes@virtusa.com>
+Date: Fri, 5 Feb 2016 18:56:23 +0530
+Subject: [PATCH 5/5] new change
+
+---
+ webProject/build.gradle | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/webProject/build.gradle b/webProject/build.gradle
+index f94b932..6386fad 100644
+--- a/webProject/build.gradle
++++ b/webProject/build.gradle
+@@ -18,5 +18,4 @@ compileJava.dependsOn unzip
+ 
+ dependencies {
+ 	compile 'com.virtusa.app:myApp:1.0-SNAPSHOT'
+-	compile 'com.truven.app:extApp:1.0-SNAPSHOT'
+ }
+-- 
+1.9.5.msysgit.0
+
